@@ -10,4 +10,4 @@ b1.addEventListener( "click", function(){
 const b2=document.querySelector("#button2");
 const nb=document.createElement("button");
 nb.textContent="button3";
-b2.appendChild(nb);
+b2.insertAdjacentElement(nb);
