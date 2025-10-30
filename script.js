@@ -6,3 +6,8 @@ b1.addEventListener( "click", function(){
   alert(a1);});
 
 
+//第二个功能，在button2后面插入新的按钮
+const b2=document.querySelector("#button2");
+const nb=document.createElement("button");
+nb.textContent="button3";
+b2.appendChild(nb);
