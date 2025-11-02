@@ -21,7 +21,7 @@ b2.addEventListener("click",()=>{
   m1.classList.add("show");});
 
 //给modal的关闭按钮增加一个关闭功能
-const clsoebtn=document.querySelector(".modal-close-btn");
+const closebtn=document.querySelector(".modal-close-btn");
 closebtn.addEventListener("click",()=>{
   m1.classList.remove("show");
 });
