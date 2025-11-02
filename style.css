@@ -15,9 +15,18 @@
 
 /*modal的内容层*/
 
+/* modal 内容卡片 */
 .modal-content1{
-  background:white;
-  width:300px;
+  background: white;
+  width: 320px;
+  padding: 20px;                 /* 内边距，让内容不贴边 */
+  border-radius: 12px;           /* 圆角 */
+  box-shadow: 0 12px 30px rgba(0,0,0,.2); /* 阴影：立体起来 */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;                     /* 元素间距 */
+  transform: scale(.92);         /* 初始缩小一点，用于弹出动画 */
+  transition: transform .2s ease;
 }
   
 /*modal的show*/  
