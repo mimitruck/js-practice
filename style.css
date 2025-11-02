@@ -19,7 +19,7 @@
 }
   
 /*modal的show*/  
-.modal1.show{
+.modal01.show{
   opacity:1;
   visibility:visible;
   pointer-events:auto;
