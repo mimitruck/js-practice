@@ -13,3 +13,9 @@ nb.textContent="button3";
 nb.id="button3";
 nb.style.marginLeft="8px";
 b2.insertAdjacentElement("afterend",nb);
+
+
+//点击button2弹出modal
+const m1=document.querySelector("#modal1");
+b2.addEventListener("click",()=>{
+  m1.classList.add("show");});
