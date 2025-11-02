@@ -18,7 +18,6 @@
 .modal-content1{
   background:white;
   width:300px;
-  margin: 150px auto;  /*150px	上下外边距 150px（让弹窗离顶部一段距离）；auto	左右自动居中*/
 }
   
 /*modal的show*/  
