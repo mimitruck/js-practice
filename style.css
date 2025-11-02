@@ -1,0 +1,16 @@
+/*modal的最外层*/
+.modal01{
+  display:none;
+  position:fixed;/*固定在屏幕上，去掉 position: fixed，modal 不再固定在屏幕上，跟着页面普通元素一样“排版” ，modal 不再是弹窗，而变成页面里一个普通块元素*/
+}
+
+/*modal的内容层*/
+
+.modal-content1{
+  background:white;
+  width:300px;
+  margin: 150px auto;  /*150px	上下外边距 150px（让弹窗离顶部一段距离）；auto	左右自动居中*/
+}
+  
+  
+  
