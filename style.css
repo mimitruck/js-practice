@@ -4,8 +4,8 @@
   /*使用 flex + align-center 做页面内容完美居中*/
   display:flex; /*modal 元素一直保持 flex 布局，不会在显示/隐藏之间变来变去，display: none = 元素完全从页面中拿掉*/
   /*display = “排队方式”;position = “站在哪里”*/
-  justify-content: center; /*这两个一定要有。否则 flex 只是“横向排版”，不会垂直居中，而且会靠左*/
-  align-items: center;
+  justify-content: center; /*平行，横向 这两个一定要有。否则 flex 只是“横向排版”，不会垂直居中，而且会靠左*/
+  align-items: center; /*垂直*/
   
  
 
