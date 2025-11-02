@@ -11,4 +11,5 @@ const b2=document.querySelector("#button2");
 const nb=document.createElement("button");
 nb.textContent="button3";
 nb.id="button3";
+nb.style.marginLeft="8px";
 b2.insertAdjacentElement("afterend",nb);
