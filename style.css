@@ -1,16 +1,18 @@
 /*modal的最外层*/
 .modal01{
 
-  /*使用 flex + align-center 做居中*/
+  /*使用 flex + align-center 做页面内容完美居中*/
   display:flex; /*modal 元素一直保持 flex 布局，不会在显示/隐藏之间变来变去，display: none = 元素完全从页面中拿掉*/
+  /*display = “排队方式”;position = “站在哪里”*/
   justify-content: center; /*这两个一定要有。否则 flex 只是“横向排版”，不会垂直居中，而且会靠左*/
   align-items: center;
   
-  position:fixed;/*固定在屏幕上，去掉 position: fixed，modal 不再固定在屏幕上，跟着页面普通元素一样“排版” ，modal 不再是弹窗，而变成页面里一个普通块元素*/
-
+ 
 
   /*遮罩层*/
+  position:fixed;/*固定在屏幕上，如果写了 inset 但没有 position（fixed/absolute/relative/sticky），inset 不会生效，因为 inset 是 定位属性，必须配合定位模型使用*/
   inset: 0; /* 覆盖整个背景区域，不是为了显示全屏弹窗，而是模糊背景 */
+  /*inset 是一个简写属性，相当于同时设置：top: 0;right: 0;bottom: 0;left: 0;把这个元素固定在窗口，四边都是 0 → 全屏覆盖*/
   background: rgba(0,0,0,0.2); /* 半透明 */
   backdrop-filter: blur(10px); /* 🔥 背景模糊关键 */
   
