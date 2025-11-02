@@ -2,7 +2,9 @@
 .modal01{
   display:flex; /*modal 元素一直保持 flex 布局，不会在显示/隐藏之间变来变去，display: none = 元素完全从页面中拿掉*/
   position:fixed;/*固定在屏幕上，去掉 position: fixed，modal 不再固定在屏幕上，跟着页面普通元素一样“排版” ，modal 不再是弹窗，而变成页面里一个普通块元素*/
-
+  inset: 0; /* 覆盖整个背景区域，不是为了显示全屏弹窗，而是模糊背景 */
+  background: rgba(0,0,0,0.2); /* 半透明 */
+  backdrop-filter: blur(10px); /* 🔥 背景模糊关键 */
   top: 50%;             /* 垂直居中 */
   left: 50%;            /* 水平居中 */
 
