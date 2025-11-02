@@ -1,7 +1,13 @@
 /*modal的最外层*/
 .modal01{
-  display:none;
+  display:flex; /*modal 元素一直保持 flex 布局，不会在显示/隐藏之间变来变去，display: none = 元素完全从页面中拿掉*/
   position:fixed;/*固定在屏幕上，去掉 position: fixed，modal 不再固定在屏幕上，跟着页面普通元素一样“排版” ，modal 不再是弹窗，而变成页面里一个普通块元素*/
+
+   /*现代开发一般用display:flex搭配透明opacity,显示visibility和pointer-event点击处理使用*/
+    /*相当于：看不到，聚焦不到，点不到*/
+  opacity:0;/*透明*/
+  visibility:hidden; /*不可见，opacity:0 只让元素看不见，但它仍存在并可能被聚焦；visibility:hidden 让元素不可见且不占交互焦点，两者一起用才能做到既隐藏视觉又隐藏交互。*/
+  pointer-events:none;  /*不响应点击*/
 }
 
 /*modal的内容层*/
@@ -12,5 +18,11 @@
   margin: 150px auto;  /*150px	上下外边距 150px（让弹窗离顶部一段距离）；auto	左右自动居中*/
 }
   
+/*modal的show*/  
+.modal1.show{
+  opacity:1;
+  visibility:visible;
+  pointer-events:auto;
+}
   
-  
+
