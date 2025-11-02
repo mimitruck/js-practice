@@ -19,3 +19,6 @@ b2.insertAdjacentElement("afterend",nb);
 const m1=document.querySelector("#modal1");
 b2.addEventListener("click",()=>{
   m1.classList.add("show");});
+
+//给modal的关闭按钮增加一个关闭功能
+clsoebtn
