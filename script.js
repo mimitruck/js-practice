@@ -1,10 +1,13 @@
-//给button1绑定时间，先get element，然后add event listner
+//点击button1，弹出toast//
 const b1=document.getElementById("button1");
-//得到的就是——整个 <button> 元素对象（DOM 元素
-b1.addEventListener( "click", function(){
-  const a1="Dont click";
-  alert(a1);});
 
+function showtoast(msg){
+  const t=document.querySelector("#toast");
+  t.tectContent=msg;
+  t.classList.add("show");
+  setTimeout(()=>toast.classList.remove("show"),2000);
+}
+b1.addEventListener( "click", ()=>showtoast("this is the msg"));
 
 //第二个功能，在button2后面插入新的按钮
 const b2=document.querySelector("#button2");
@@ -25,3 +28,5 @@ const closebtn=document.querySelector(".modal-close-btn");
 closebtn.addEventListener("click",()=>{
   m1.classList.remove("show");
 });
+
+
