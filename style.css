@@ -38,7 +38,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;                     /* 元素间距 */
-  transform: scale(.92);         /* 初始缩小一点，用于弹出动画 */
+  transform: translateY(12px) scale(.92);         /* 初始缩小一点，用于弹出动画 */
   transition: transform .2s ease;
 }
   
