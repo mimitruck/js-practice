@@ -3,7 +3,7 @@ const b1=document.getElementById("button1");
 
 function showtoast(msg){
   const t=document.querySelector("#toast");
-  t.tectContent=msg;
+  t.textContent=msg;
   t.classList.add("show");
   setTimeout(()=>toast.classList.remove("show"),2000);
 }
