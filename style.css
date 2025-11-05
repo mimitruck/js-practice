@@ -52,7 +52,7 @@
 /*Toast 的css,默认隐藏 */
 .toast {
   position:fixed;
-  top：20px;
+  top: 20px;
   right:20px;
   background:pink;
   color:white;
