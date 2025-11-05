@@ -5,7 +5,7 @@ function showtoast(msg){
   const t=document.querySelector("#toast");
   t.textContent=msg;
   t.classList.add("show");
-  setTimeout(()=>toast.classList.remove("show"),2000);
+  setTimeout(()=>t.classList.remove("show"),2000);
 }
 b1.addEventListener( "click", ()=>showtoast("this is the msg"));
 
