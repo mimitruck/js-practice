@@ -30,3 +30,6 @@ closebtn.addEventListener("click",()=>{
 });
 
 
+
+//用户输入tracking id,点击查询弹出查询结果
+
