@@ -1,3 +1,26 @@
+/*Toast 的css,默认隐藏 */
+.toast {
+  position:fixed;
+  top: 20px;
+  right:20px;
+  background:pink;
+  color:white;
+
+
+  opacity:0;
+  transition:opacity .25s ease;
+  pointer-events:none;
+  
+}
+
+.toast.show {
+  opacity:1;
+}
+
+
+
+
+
 /*modal的最外层*/
 .modal01{
 
@@ -49,24 +72,6 @@
   pointer-events:auto;
 }
   
-/*Toast 的css,默认隐藏 */
-.toast {
-  position:fixed;
-  top: 20px;
-  right:20px;
-  background:pink;
-  color:white;
-
-
-  opacity:0;
-  transition:opacity .25s ease;
-  pointer-events:none;
-  
-}
-
-.toast.show {
-  opacity:1;
-}
 
 
 .dropdown-menu {
