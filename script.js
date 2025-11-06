@@ -32,4 +32,19 @@ closebtn.addEventListener("click",()=>{
 
 
 //用户输入tracking id,点击查询弹出查询结果
+//获取input用户输入内容，进入fedex追踪页面
+const input=document.querySelector("#fedex-tracking-input");
+const trackbtn=document.querySelector("#tracking-id-btn");
+trackbtn.addEventListener("click",()=>{
+const raw=input.value;
+const id=raw.trim();
+if(!id){
+alert("please type tracking id");
+return;
+}
+  const url = `https://www.fedex.com/fedextrack/?tracknumbers=${encodeURIComponent(id)}`;
+  window.open(url, "_blank");  
+
+});
+
 
